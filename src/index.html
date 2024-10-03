@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script type="module" src="./assets/js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemple Tailwind</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-menu hidden md:flex">
+        <h1>Trivia Game</h1>
+        <div class="header-btns">
+          <button class="btn-best-scores">Best scores</button>
+          <button class="btn-settings">Settings</button>
+        </div>
+      </div>
+
+      <div class="menu-mobile md:hidden fixed bottom-0 bg-black w-full h-11 flex flex-col">
+        <div class="grid grid-cols-5 relative">
+          <button class="btn-start border border-white rounded-full col-start-3 bg-black text-white absolute bottom-[-4px]">Start</button>
+        </div>
+        <div class="btns-mobile grid grid-cols-5">
+          <a href="https://opentdb.com/api_config.php" class="text-white col-start-1 col-span-2">Open Trivia Database</a>
+          <button class="btn-best-scores text-white border border-white rounded-full col-start-4">Best scores</button>
+          <button class="btn-settings text-white border border-white rounded-full col-start-5">Settings</button>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold">Welcome !</h2>
+    </header>
+    
+  </body>
+</html>
