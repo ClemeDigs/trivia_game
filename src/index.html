@@ -5,21 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <script type="module" src="./assets/js/main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exemple Tailwind</title>
+    <script type="module" src="https://kit.fontawesome.com/d0b4d9ccc9.js" crossorigin="anonymous" defer></script>
+    <title>TRIVIA</title>
   </head>
-  <body class="bg-desert bg-[length:auto_35%] lg:bg-[length:100%_auto] bg-no-repeat min-h-screen">
-    <header class="h-[40vh] flex flex-col gap-16">
-      <div class="header-menu hidden md:flex h-[80px] px-16 justify-between items-center">
-        <h1 class="text-3xl font-bold">Trivia Game</h1>
-        <div class="header-btns flex gap-3 items-center">
-          <button class="btn-best-scores px-6 py-3 border">Best scores</button>
-          <button class="btn-settings px-6 py-3 border">Settings</button>
+  <!-- <body class="bg-desert bg-[length:auto_35%] lg:bg-[length:100%_auto] bg-no-repeat min-h-screen">
+
+    <header>
+      <div class="header-menu bg-offWhite bg-opacity-65 backdrop-blur drop-shadow-xl hidden md:flex w-full">
+        <div class="header-infos flex justify-between h-[5rem] px-[4.375rem] max-w-[1440px] m-auto">
+          <h1 class="text-h1 font-bold flex-1">Trivia Game</h1>
+          <div class="header-btns flex items-center gap-[2.25rem]">
+            <button class="btn-best-scores bg-black text-offWhite font-semibold px-[1.75rem] py-[0.625rem] border-none rounded-full">Best scores<i class="fa-solid fa-medal ps-3"></i></button>
+            <button class="btn-settings bg-black text-offWhite font-semibold px-[1.75rem] py-[0.625rem] border-none rounded-full">Settings<i class="fa-solid fa-gear ps-3"></i></button>
+          </div>
         </div>
       </div>
 
       <div class="menu-mobile md:hidden fixed bottom-0 bg-black w-full h-11 flex flex-col">
-        <div class="grid grid-cols-5 relative">
-          <button class="btn-start border border-white rounded-full col-start-3 bg-black text-white absolute bottom-[-4px]">Start</button>
+        <div class="grid grid-cols-5">
+          <button class="btn-start border border-white rounded-full col-start-3 bg-black text-white bottom-[-4px]">Start</button>
         </div>
         <div class="btns-mobile grid grid-cols-5">
           <a href="https://opentdb.com/api_config.php" class="text-white col-start-1 col-span-2">Open Trivia Database</a>
@@ -27,14 +31,14 @@
           <button class="btn-settings text-white border border-white rounded-full col-start-5">Settings</button>
         </div>
       </div>
-
-      <h2 class="text-2xl font-bold px-16">Welcome !</h2>
+      <h2 class="text-h2 font-bold px-[4.375rem] pt-10">Welcome !</h2>
     </header>
 
 
-
     <main>
-      <section class="ecran-accueil"></section>
+      <section class="ecran-accueil h-[60vh] bg-offWhite rounded-t-[8rem] fixed bottom-0 w-full">
+      
+      </section>
 
       <section class="ecran-jeu"></section>
 
@@ -48,13 +52,87 @@
     </main>
 
 
-
     <footer>
-      <div class="footer-infos">
-        <p class="">Eve Cloutier et Clémentine Digout</p>
-        <p>Octobre 2024</p>
-      </div>
-      <a href=""></a>
+      <div class="footer-wrapper bg-black fixed bottom-0 w-full">
+        <div class="footer-infos flex justify-between h-[5rem] px-[4.375rem] items-center max-w-[1440px] m-auto">
+          <div class="team-info flex flex-row gap-[4.625rem]">
+            <p class="text-h3 font-semibold text-offWhite">Eve Cloutier et Clémentine Digout</p>
+            <p class="text-h3 font-semibold text-offWhite"><time datetime="2024-11-11">11 novembre 2024</time></p>
+          </div>
+            <div>
+              <a href="https://opentdb.com/" target=”_blank”><img src="./assets/img/trivia-logo-banner.png" alt="logo Trivia"></a>
+            </div>
+        </div>
+    </div>
     </footer>
-  </body>
+  </body> -->
+
+  <body class="bg-[#bf5737]">
+    <header class="header-menu bg-desert bg-[length:auto_35%] lg:bg-[length:100%_auto] bg-no-repeat min-h-screen flex flex-row justify-center md:block items-baseline md:items-start">
+      <div class="wrapper hidden md:block bg-offWhite bg-opacity-65 backdrop-blur drop-shadow-xl">
+        <div class="header-nav flex justify-between h-[5rem] px-[4.375rem] max-w-[1920px] m-auto">
+          <h1 class="text-h1 font-bold flex-1 drop-shadow-lg">Trivia Game</h1>
+          <div class="header-btns flex items-center gap-[2.25rem]">
+              <button class="btn-best-scores bg-black text-offWhite font-semibold px-[1.75rem] py-[0.625rem] border-none rounded-full hover:drop-shadow-trivia flex items-center">Best scores<i class="fa-solid fa-medal text-icon ps-3"></i></button>
+              <button class="btn-settings bg-black text-offWhite font-semibold px-[1.75rem] py-[0.625rem] border-none rounded-full hover:drop-shadow-trivia flex items-center">Settings<i class="fa-solid fa-gear ps-3 text-icon"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-h2 hidden font-semibold text-center md:text-left px-[4.375rem] pt-10 max-w-[1920px] m-auto drop-shadow-lg translate-y-[-370px] md:translate-y-0">Welcome !</h2>
+
+      <div class="result-wrapper flex md:text-left md:px-[4.375rem] md:pt-10 max-w-[1920px] m-auto md:items-end translate-y-[-350px] md:translate-y-[-20px]">
+        <h2 class="text-h2 font-bold text-center drop-shadow-lg md:translate-y-[-3rem]">Score</h2>
+        <div class="score-wrapper flex justify-center items-center">
+          <h2 class="score bg-score-img bg-[length:88%] md:bg-[length:85%] bg-no-repeat bg-center text-h3 md:text-[3.125rem] font-semibold text-center text-offWhite drop-shadow-trivia px-4 py-5 md:px-8 md:py-10">88%</h2>
+        </div>
+        <div class="number-questions-wrapper flex flex-col translate-y-[-0.5rem] md:translate-y-[-3rem]">
+          <p class="for font-semibold uppercase">for</p>
+          <h2 class="number-questions text-h3 md:text-h2 font-semibold">5 questions</h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="ecran-accueil fixed bottom-0 w-full mt-[500px]">
+        <div class="text-zone min-h-[65vh] md:min-h-[68vh] lg:min-h-[60vh] bg-offWhite rounded-t-[8rem] max-w-[1920px] m-auto flex justify-center">
+          <div class="lg:min-h-[60vh] md:min-h-[68vh] translate-y-[-100px]">
+            <img class="drop-shadow-trivia" src="./assets/img/renard.svg" alt="renard"></div>
+        </div>
+        <div class="btn--main translate-y-[-120px] px-[4.375rem] max-w-[1920px] m-auto hidden md:flex justify-between">
+          <button class="btn-settings--main bg-black text-offWhite font-semibold px-[1.75rem] py-[0.625rem] border-none rounded-full hover:drop-shadow-trivia flex items-center">Settings<i class="fa-solid fa-gear text-icon ps-3"></i></button>
+          <button class="btn-start--main bg-black text-offWhite font-semibold px-[1.75rem] py-[0.625rem] border-none rounded-full hover:drop-shadow-trivia flex items-center">Start<i class="fa-solid fa-arrow-right text-icon ps-3"></i></button>
+        </div>
+        </section>
+        <section></section>
+        <section></section>
+
+        <div class="menu-mobile md:hidden bottom-0 w-full flex flex-col absolute z-10">
+          <div class="bg-black h-[6rem]">
+            <div class="flex justify-center">
+              <button class="btn-start--mobile bg-offWhite text-black font-semibold text-2xl px-[1rem] py-[0.7rem] border-black border-4 rounded-full bottom-[-15px] translate-y-[-30px]"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="btns-mobile flex justify-between items-center px-[1.375rem] translate-y-[-30px]">
+              <a class="logo-trivia--mobile" href="https://opentdb.com/" target=”_blank”><img src="./assets/img/trivia-logo-banner.png" alt="logo Trivia mobile"></a>
+              <a href="https://opentdb.com/api_config.php" class="text-white"></a>
+              <button class="btn-best-scores--mobile bg-offWhite font-semibold p-[1rem] border-none rounded-full flex"><i class="fa-solid fa-medal text-icon"></i></button>
+              <button class="btn-settings--mobile bg-offWhite font-semibold p-[1rem] border-none rounded-full flex"><i class="fa-solid fa-gear text-icon"></i></button>
+            </div> 
+          </div>
+        </div> 
+
+    </main>
+
+    <footer class="hidden md:block translate-y-[-205px] md:translate-y-0">
+        <div class="footer-wrapper bg-black fixed md:bottom-0 w-full">
+            <div class="footer-infos flex justify-center md:justify-between md:h-[5rem] md:px-[4.375rem] items-center max-w-[1920px] m-auto">
+                <div class="team-info flex flex-col md:flex-row gap-3 md:gap-[2rem] lg:gap-[4.625rem] p-3 md:p-0 pb-10 md:pb-0">
+                    <p class="md:text-h3 font-semibold text-offWhite text-center md:text-left">Eve Cloutier et Clémentine Digout</p>
+                    <p class="md:text-h3 font-semibold text-offWhite text-center md:text-left"><time datetime="2024-11-11">11 novembre 2024</time></p>
+                </div>
+                <a class="logo-trivia hidden md:block" href="https://opentdb.com/" target=”_blank”><img src="./assets/img/trivia-logo-banner.png" alt="logo Trivia"></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
